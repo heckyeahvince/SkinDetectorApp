@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextureView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageViewA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ulabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="U Range"
+        android:textColor="@android:color/holo_red_dark"
+        />
+
+    <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+        android:id="@+id/uRangeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        rsb:absoluteMaxValue="255"
+        rsb:absoluteMinValue="0" />
+
+        <TextView
+            android:id="@+id/vlabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V Range"
+            android:textColor="@android:color/holo_red_dark"
+            />
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:id="@+id/vRangeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            rsb:absoluteMaxValue="255"
+            rsb:absoluteMinValue="0" />
+
+</LinearLayout>
+
+
+</RelativeLayout>
