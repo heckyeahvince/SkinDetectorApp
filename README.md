@@ -174,31 +174,3 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 ```
-
-## Accept
-
-To accept the assignment, click the following URL:
-
-https://classroom.github.com/assignment-invitations/56c2f3f56b2a61440626cd6a204ef00c
-
-## Sample Solution:
-
-https://github.com/DeLaSalleUniversity-Manila/SkinDetector
-
-## Submission Procedure with Git: 
-
-```shell
-$ cd /path/to/your/android/app/
-$ git init
-$ git add –all
-$ git commit -m "your message, e.x. Assignment 1 submission"
-$ git remote add origin <Assignment link copied from assignment github, e.x. https://github.com/DeLaSalleUniversity-Manila/secondactivityassignment-melvincabatuan.git>
-$ git push -u origin master
-<then Enter Username and Password>
-```
-
-## Screenshot:
-
-![screenshot1](SkinDetect-2015-08-03-071441.png)
-
-"*Most of you are familiar with the virtues of a programmer. There are three, of course: laziness, impatience, and hubris.*" -  Larry Wall
